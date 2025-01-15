@@ -1,0 +1,4502 @@
+|REGTEST
+Q[0] <= reg48_G1:inst.Q[0]
+Q[1] <= reg48_G1:inst.Q[1]
+Q[2] <= reg48_G1:inst.Q[2]
+Q[3] <= reg48_G1:inst.Q[3]
+Q[4] <= reg48_G1:inst.Q[4]
+Q[5] <= reg48_G1:inst.Q[5]
+Q[6] <= reg48_G1:inst.Q[6]
+Q[7] <= reg48_G1:inst.Q[7]
+Q[8] <= reg48_G1:inst.Q[8]
+Q[9] <= reg48_G1:inst.Q[9]
+Q[10] <= reg48_G1:inst.Q[10]
+Q[11] <= reg48_G1:inst.Q[11]
+Q[12] <= reg48_G1:inst.Q[12]
+Q[13] <= reg48_G1:inst.Q[13]
+Q[14] <= reg48_G1:inst.Q[14]
+Q[15] <= reg48_G1:inst.Q[15]
+Q[16] <= reg48_G1:inst.Q[16]
+Q[17] <= reg48_G1:inst.Q[17]
+Q[18] <= reg48_G1:inst.Q[18]
+Q[19] <= reg48_G1:inst.Q[19]
+Q[20] <= reg48_G1:inst.Q[20]
+Q[21] <= reg48_G1:inst.Q[21]
+Q[22] <= reg48_G1:inst.Q[22]
+Q[23] <= reg48_G1:inst.Q[23]
+Q[24] <= reg48_G1:inst.Q[24]
+Q[25] <= reg48_G1:inst.Q[25]
+Q[26] <= reg48_G1:inst.Q[26]
+Q[27] <= reg48_G1:inst.Q[27]
+Q[28] <= reg48_G1:inst.Q[28]
+Q[29] <= reg48_G1:inst.Q[29]
+Q[30] <= reg48_G1:inst.Q[30]
+Q[31] <= reg48_G1:inst.Q[31]
+Q[32] <= reg48_G1:inst.Q[32]
+Q[33] <= reg48_G1:inst.Q[33]
+Q[34] <= reg48_G1:inst.Q[34]
+Q[35] <= reg48_G1:inst.Q[35]
+Q[36] <= reg48_G1:inst.Q[36]
+Q[37] <= reg48_G1:inst.Q[37]
+Q[38] <= reg48_G1:inst.Q[38]
+Q[39] <= reg48_G1:inst.Q[39]
+Q[40] <= reg48_G1:inst.Q[40]
+Q[41] <= reg48_G1:inst.Q[41]
+Q[42] <= reg48_G1:inst.Q[42]
+Q[43] <= reg48_G1:inst.Q[43]
+Q[44] <= reg48_G1:inst.Q[44]
+Q[45] <= reg48_G1:inst.Q[45]
+Q[46] <= reg48_G1:inst.Q[46]
+Q[47] <= reg48_G1:inst.Q[47]
+CLK => reg48_G1:inst.CLK
+RESET => reg48_G1:inst.RESET
+Load => reg48_G1:inst.Load
+RShift => reg48_G1:inst.RShift
+D[0] => reg48_G1:inst.D[0]
+D[1] => reg48_G1:inst.D[1]
+D[2] => reg48_G1:inst.D[2]
+D[3] => reg48_G1:inst.D[3]
+D[4] => reg48_G1:inst.D[4]
+D[5] => reg48_G1:inst.D[5]
+D[6] => reg48_G1:inst.D[6]
+D[7] => reg48_G1:inst.D[7]
+D[8] => reg48_G1:inst.D[8]
+D[9] => reg48_G1:inst.D[9]
+D[10] => reg48_G1:inst.D[10]
+D[11] => reg48_G1:inst.D[11]
+D[12] => reg48_G1:inst.D[12]
+D[13] => reg48_G1:inst.D[13]
+D[14] => reg48_G1:inst.D[14]
+D[15] => reg48_G1:inst.D[15]
+D[16] => reg48_G1:inst.D[16]
+D[17] => reg48_G1:inst.D[17]
+D[18] => reg48_G1:inst.D[18]
+D[19] => reg48_G1:inst.D[19]
+D[20] => reg48_G1:inst.D[20]
+D[21] => reg48_G1:inst.D[21]
+D[22] => reg48_G1:inst.D[22]
+D[23] => reg48_G1:inst.D[23]
+D[24] => reg48_G1:inst.D[24]
+D[25] => reg48_G1:inst.D[25]
+D[26] => reg48_G1:inst.D[26]
+D[27] => reg48_G1:inst.D[27]
+D[28] => reg48_G1:inst.D[28]
+D[29] => reg48_G1:inst.D[29]
+D[30] => reg48_G1:inst.D[30]
+D[31] => reg48_G1:inst.D[31]
+D[32] => reg48_G1:inst.D[32]
+D[33] => reg48_G1:inst.D[33]
+D[34] => reg48_G1:inst.D[34]
+D[35] => reg48_G1:inst.D[35]
+D[36] => reg48_G1:inst.D[36]
+D[37] => reg48_G1:inst.D[37]
+D[38] => reg48_G1:inst.D[38]
+D[39] => reg48_G1:inst.D[39]
+D[40] => reg48_G1:inst.D[40]
+D[41] => reg48_G1:inst.D[41]
+D[42] => reg48_G1:inst.D[42]
+D[43] => reg48_G1:inst.D[43]
+D[44] => reg48_G1:inst.D[44]
+D[45] => reg48_G1:inst.D[45]
+D[46] => reg48_G1:inst.D[46]
+D[47] => reg48_G1:inst.D[47]
+
+
+|REGTEST|reg48_G1:inst
+CLK => reg_g1:Reg5.CLK
+CLK => reg_g1:Reg4.CLK
+CLK => reg_g1:Reg3.CLK
+CLK => reg_g1:Reg2.CLK
+CLK => reg_g1:Reg1.CLK
+CLK => reg_g1:Reg0.CLK
+RESET => reg_g1:Reg5.RESET
+RESET => reg_g1:Reg4.RESET
+RESET => reg_g1:Reg3.RESET
+RESET => reg_g1:Reg2.RESET
+RESET => reg_g1:Reg1.RESET
+RESET => reg_g1:Reg0.RESET
+Load => l5.IN0
+Load => l4.IN0
+Load => l3.IN0
+Load => l2.IN0
+Load => l1.IN0
+Load => l0.IN0
+Load => ls.IN0
+Load => l5.IN0
+Load => l4.IN0
+Load => l3.IN0
+Load => l2.IN0
+Load => l1.IN0
+Load => l0.IN0
+Load => l5.IN0
+Load => l4.IN0
+Load => l3.IN0
+Load => l2.IN0
+Load => l1.IN0
+Load => l0.IN0
+Load => l5.IN0
+Load => l4.IN0
+Load => l3.IN0
+Load => l2.IN0
+Load => l1.IN0
+Load => l0.IN0
+Load => l5.IN0
+Load => l4.IN0
+Load => l3.IN0
+Load => l2.IN0
+Load => l1.IN0
+Load => l0.IN0
+Load => l5.IN0
+Load => l4.IN0
+Load => l3.IN0
+Load => l2.IN0
+Load => l1.IN0
+Load => l0.IN0
+Load => l5.IN0
+Load => l4.IN0
+Load => l3.IN0
+Load => l2.IN0
+Load => l1.IN0
+Load => l0.IN0
+Load => l5.IN0
+Load => l4.IN0
+Load => l3.IN0
+Load => l2.IN0
+Load => l1.IN0
+Load => l0.IN0
+Load => l5.IN0
+Load => l5.IN0
+Load => l5.IN0
+Load => l5.IN0
+Load => l5.IN0
+Load => l5.IN0
+Load => l5.IN0
+Load => l5.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l4.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l3.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l2.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l1.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+Load => l0.IN0
+RShift => l4.IN1
+RShift => l3.IN1
+RShift => l2.IN1
+RShift => l1.IN1
+RShift => l0.IN1
+RShift => ls.IN1
+RShift => l4.IN1
+RShift => l3.IN1
+RShift => l2.IN1
+RShift => l1.IN1
+RShift => l0.IN1
+RShift => l4.IN1
+RShift => l3.IN1
+RShift => l2.IN1
+RShift => l1.IN1
+RShift => l0.IN1
+RShift => l4.IN1
+RShift => l3.IN1
+RShift => l2.IN1
+RShift => l1.IN1
+RShift => l0.IN1
+RShift => l4.IN1
+RShift => l3.IN1
+RShift => l2.IN1
+RShift => l1.IN1
+RShift => l0.IN1
+RShift => l4.IN1
+RShift => l3.IN1
+RShift => l2.IN1
+RShift => l1.IN1
+RShift => l0.IN1
+RShift => l4.IN1
+RShift => l3.IN1
+RShift => l2.IN1
+RShift => l1.IN1
+RShift => l0.IN1
+RShift => l4.IN1
+RShift => l3.IN1
+RShift => l2.IN1
+RShift => l1.IN1
+RShift => l0.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l5.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l4.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l3.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l2.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l1.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+RShift => l0.IN1
+D[0] => l0.IN1
+D[1] => l0.IN1
+D[2] => l0.IN1
+D[3] => l0.IN1
+D[4] => l0.IN1
+D[5] => l0.IN1
+D[6] => l0.IN1
+D[7] => l0.IN1
+D[8] => l1.IN1
+D[9] => l1.IN1
+D[10] => l1.IN1
+D[11] => l1.IN1
+D[12] => l1.IN1
+D[13] => l1.IN1
+D[14] => l1.IN1
+D[15] => l1.IN1
+D[16] => l2.IN1
+D[17] => l2.IN1
+D[18] => l2.IN1
+D[19] => l2.IN1
+D[20] => l2.IN1
+D[21] => l2.IN1
+D[22] => l2.IN1
+D[23] => l2.IN1
+D[24] => l3.IN1
+D[25] => l3.IN1
+D[26] => l3.IN1
+D[27] => l3.IN1
+D[28] => l3.IN1
+D[29] => l3.IN1
+D[30] => l3.IN1
+D[31] => l3.IN1
+D[32] => l4.IN1
+D[33] => l4.IN1
+D[34] => l4.IN1
+D[35] => l4.IN1
+D[36] => l4.IN1
+D[37] => l4.IN1
+D[38] => l4.IN1
+D[39] => l4.IN1
+D[40] => l5.IN1
+D[41] => l5.IN1
+D[42] => l5.IN1
+D[43] => l5.IN1
+D[44] => l5.IN1
+D[45] => l5.IN1
+D[46] => l5.IN1
+D[47] => l5.IN1
+Q[0] <= reg_g1:Reg0.Q[0]
+Q[1] <= reg_g1:Reg0.Q[1]
+Q[2] <= reg_g1:Reg0.Q[2]
+Q[3] <= reg_g1:Reg0.Q[3]
+Q[4] <= reg_g1:Reg0.Q[4]
+Q[5] <= reg_g1:Reg0.Q[5]
+Q[6] <= reg_g1:Reg0.Q[6]
+Q[7] <= reg_g1:Reg0.Q[7]
+Q[8] <= reg_g1:Reg1.Q[0]
+Q[9] <= reg_g1:Reg1.Q[1]
+Q[10] <= reg_g1:Reg1.Q[2]
+Q[11] <= reg_g1:Reg1.Q[3]
+Q[12] <= reg_g1:Reg1.Q[4]
+Q[13] <= reg_g1:Reg1.Q[5]
+Q[14] <= reg_g1:Reg1.Q[6]
+Q[15] <= reg_g1:Reg1.Q[7]
+Q[16] <= reg_g1:Reg2.Q[0]
+Q[17] <= reg_g1:Reg2.Q[1]
+Q[18] <= reg_g1:Reg2.Q[2]
+Q[19] <= reg_g1:Reg2.Q[3]
+Q[20] <= reg_g1:Reg2.Q[4]
+Q[21] <= reg_g1:Reg2.Q[5]
+Q[22] <= reg_g1:Reg2.Q[6]
+Q[23] <= reg_g1:Reg2.Q[7]
+Q[24] <= reg_g1:Reg3.Q[0]
+Q[25] <= reg_g1:Reg3.Q[1]
+Q[26] <= reg_g1:Reg3.Q[2]
+Q[27] <= reg_g1:Reg3.Q[3]
+Q[28] <= reg_g1:Reg3.Q[4]
+Q[29] <= reg_g1:Reg3.Q[5]
+Q[30] <= reg_g1:Reg3.Q[6]
+Q[31] <= reg_g1:Reg3.Q[7]
+Q[32] <= reg_g1:Reg4.Q[0]
+Q[33] <= reg_g1:Reg4.Q[1]
+Q[34] <= reg_g1:Reg4.Q[2]
+Q[35] <= reg_g1:Reg4.Q[3]
+Q[36] <= reg_g1:Reg4.Q[4]
+Q[37] <= reg_g1:Reg4.Q[5]
+Q[38] <= reg_g1:Reg4.Q[6]
+Q[39] <= reg_g1:Reg4.Q[7]
+Q[40] <= reg_g1:Reg5.Q[0]
+Q[41] <= reg_g1:Reg5.Q[1]
+Q[42] <= reg_g1:Reg5.Q[2]
+Q[43] <= reg_g1:Reg5.Q[3]
+Q[44] <= reg_g1:Reg5.Q[4]
+Q[45] <= reg_g1:Reg5.Q[5]
+Q[46] <= reg_g1:Reg5.Q[6]
+Q[47] <= reg_g1:Reg5.Q[7]
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5
+CLK => subreg_g1:SR7.CLK
+CLK => subreg_g1:SR6.CLK
+CLK => subreg_g1:SR5.CLK
+CLK => subreg_g1:SR4.CLK
+CLK => subreg_g1:SR3.CLK
+CLK => subreg_g1:SR2.CLK
+CLK => subreg_g1:SR1.CLK
+CLK => subreg_g1:SR0.CLK
+RESET => subreg_g1:SR7.RESET
+RESET => subreg_g1:SR6.RESET
+RESET => subreg_g1:SR5.RESET
+RESET => subreg_g1:SR4.RESET
+RESET => subreg_g1:SR3.RESET
+RESET => subreg_g1:SR2.RESET
+RESET => subreg_g1:SR1.RESET
+RESET => subreg_g1:SR0.RESET
+Load => subreg_g1:SR7.Load
+Load => subreg_g1:SR6.Load
+Load => subreg_g1:SR5.Load
+Load => subreg_g1:SR4.Load
+Load => subreg_g1:SR3.Load
+Load => subreg_g1:SR2.Load
+Load => subreg_g1:SR1.Load
+Load => subreg_g1:SR0.Load
+LShift => subreg_g1:SR7.LShift
+LShift => subreg_g1:SR6.LShift
+LShift => subreg_g1:SR5.LShift
+LShift => subreg_g1:SR4.LShift
+LShift => subreg_g1:SR3.LShift
+LShift => subreg_g1:SR2.LShift
+LShift => subreg_g1:SR1.LShift
+LShift => subreg_g1:SR0.LShift
+RShift => subreg_g1:SR7.RShift
+RShift => subreg_g1:SR6.RShift
+RShift => subreg_g1:SR5.RShift
+RShift => subreg_g1:SR4.RShift
+RShift => subreg_g1:SR3.RShift
+RShift => subreg_g1:SR2.RShift
+RShift => subreg_g1:SR1.RShift
+RShift => subreg_g1:SR0.RShift
+L => subreg_g1:SR0.L
+R => subreg_g1:SR7.R
+D[0] => subreg_g1:SR0.D
+D[1] => subreg_g1:SR1.D
+D[2] => subreg_g1:SR2.D
+D[3] => subreg_g1:SR3.D
+D[4] => subreg_g1:SR4.D
+D[5] => subreg_g1:SR5.D
+D[6] => subreg_g1:SR6.D
+D[7] => subreg_g1:SR7.D
+Q[0] <= subreg_g1:SR0.Q
+Q[1] <= subreg_g1:SR1.Q
+Q[2] <= subreg_g1:SR2.Q
+Q[3] <= subreg_g1:SR3.Q
+Q[4] <= subreg_g1:SR4.Q
+Q[5] <= subreg_g1:SR5.Q
+Q[6] <= subreg_g1:SR6.Q
+Q[7] <= subreg_g1:SR7.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR7
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR7|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR6
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR6|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR5
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR5|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR4
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR4|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR3
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR3|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR2
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR2|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR1
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR1|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR0
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR0|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg5|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4
+CLK => subreg_g1:SR7.CLK
+CLK => subreg_g1:SR6.CLK
+CLK => subreg_g1:SR5.CLK
+CLK => subreg_g1:SR4.CLK
+CLK => subreg_g1:SR3.CLK
+CLK => subreg_g1:SR2.CLK
+CLK => subreg_g1:SR1.CLK
+CLK => subreg_g1:SR0.CLK
+RESET => subreg_g1:SR7.RESET
+RESET => subreg_g1:SR6.RESET
+RESET => subreg_g1:SR5.RESET
+RESET => subreg_g1:SR4.RESET
+RESET => subreg_g1:SR3.RESET
+RESET => subreg_g1:SR2.RESET
+RESET => subreg_g1:SR1.RESET
+RESET => subreg_g1:SR0.RESET
+Load => subreg_g1:SR7.Load
+Load => subreg_g1:SR6.Load
+Load => subreg_g1:SR5.Load
+Load => subreg_g1:SR4.Load
+Load => subreg_g1:SR3.Load
+Load => subreg_g1:SR2.Load
+Load => subreg_g1:SR1.Load
+Load => subreg_g1:SR0.Load
+LShift => subreg_g1:SR7.LShift
+LShift => subreg_g1:SR6.LShift
+LShift => subreg_g1:SR5.LShift
+LShift => subreg_g1:SR4.LShift
+LShift => subreg_g1:SR3.LShift
+LShift => subreg_g1:SR2.LShift
+LShift => subreg_g1:SR1.LShift
+LShift => subreg_g1:SR0.LShift
+RShift => subreg_g1:SR7.RShift
+RShift => subreg_g1:SR6.RShift
+RShift => subreg_g1:SR5.RShift
+RShift => subreg_g1:SR4.RShift
+RShift => subreg_g1:SR3.RShift
+RShift => subreg_g1:SR2.RShift
+RShift => subreg_g1:SR1.RShift
+RShift => subreg_g1:SR0.RShift
+L => subreg_g1:SR0.L
+R => subreg_g1:SR7.R
+D[0] => subreg_g1:SR0.D
+D[1] => subreg_g1:SR1.D
+D[2] => subreg_g1:SR2.D
+D[3] => subreg_g1:SR3.D
+D[4] => subreg_g1:SR4.D
+D[5] => subreg_g1:SR5.D
+D[6] => subreg_g1:SR6.D
+D[7] => subreg_g1:SR7.D
+Q[0] <= subreg_g1:SR0.Q
+Q[1] <= subreg_g1:SR1.Q
+Q[2] <= subreg_g1:SR2.Q
+Q[3] <= subreg_g1:SR3.Q
+Q[4] <= subreg_g1:SR4.Q
+Q[5] <= subreg_g1:SR5.Q
+Q[6] <= subreg_g1:SR6.Q
+Q[7] <= subreg_g1:SR7.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR7
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR7|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR6
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR6|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR5
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR5|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR4
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR4|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR3
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR3|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR2
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR2|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR1
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR1|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR0
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR0|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg4|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3
+CLK => subreg_g1:SR7.CLK
+CLK => subreg_g1:SR6.CLK
+CLK => subreg_g1:SR5.CLK
+CLK => subreg_g1:SR4.CLK
+CLK => subreg_g1:SR3.CLK
+CLK => subreg_g1:SR2.CLK
+CLK => subreg_g1:SR1.CLK
+CLK => subreg_g1:SR0.CLK
+RESET => subreg_g1:SR7.RESET
+RESET => subreg_g1:SR6.RESET
+RESET => subreg_g1:SR5.RESET
+RESET => subreg_g1:SR4.RESET
+RESET => subreg_g1:SR3.RESET
+RESET => subreg_g1:SR2.RESET
+RESET => subreg_g1:SR1.RESET
+RESET => subreg_g1:SR0.RESET
+Load => subreg_g1:SR7.Load
+Load => subreg_g1:SR6.Load
+Load => subreg_g1:SR5.Load
+Load => subreg_g1:SR4.Load
+Load => subreg_g1:SR3.Load
+Load => subreg_g1:SR2.Load
+Load => subreg_g1:SR1.Load
+Load => subreg_g1:SR0.Load
+LShift => subreg_g1:SR7.LShift
+LShift => subreg_g1:SR6.LShift
+LShift => subreg_g1:SR5.LShift
+LShift => subreg_g1:SR4.LShift
+LShift => subreg_g1:SR3.LShift
+LShift => subreg_g1:SR2.LShift
+LShift => subreg_g1:SR1.LShift
+LShift => subreg_g1:SR0.LShift
+RShift => subreg_g1:SR7.RShift
+RShift => subreg_g1:SR6.RShift
+RShift => subreg_g1:SR5.RShift
+RShift => subreg_g1:SR4.RShift
+RShift => subreg_g1:SR3.RShift
+RShift => subreg_g1:SR2.RShift
+RShift => subreg_g1:SR1.RShift
+RShift => subreg_g1:SR0.RShift
+L => subreg_g1:SR0.L
+R => subreg_g1:SR7.R
+D[0] => subreg_g1:SR0.D
+D[1] => subreg_g1:SR1.D
+D[2] => subreg_g1:SR2.D
+D[3] => subreg_g1:SR3.D
+D[4] => subreg_g1:SR4.D
+D[5] => subreg_g1:SR5.D
+D[6] => subreg_g1:SR6.D
+D[7] => subreg_g1:SR7.D
+Q[0] <= subreg_g1:SR0.Q
+Q[1] <= subreg_g1:SR1.Q
+Q[2] <= subreg_g1:SR2.Q
+Q[3] <= subreg_g1:SR3.Q
+Q[4] <= subreg_g1:SR4.Q
+Q[5] <= subreg_g1:SR5.Q
+Q[6] <= subreg_g1:SR6.Q
+Q[7] <= subreg_g1:SR7.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR7
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR7|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR6
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR6|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR5
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR5|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR4
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR4|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR3
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR3|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR2
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR2|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR1
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR1|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR0
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR0|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg3|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2
+CLK => subreg_g1:SR7.CLK
+CLK => subreg_g1:SR6.CLK
+CLK => subreg_g1:SR5.CLK
+CLK => subreg_g1:SR4.CLK
+CLK => subreg_g1:SR3.CLK
+CLK => subreg_g1:SR2.CLK
+CLK => subreg_g1:SR1.CLK
+CLK => subreg_g1:SR0.CLK
+RESET => subreg_g1:SR7.RESET
+RESET => subreg_g1:SR6.RESET
+RESET => subreg_g1:SR5.RESET
+RESET => subreg_g1:SR4.RESET
+RESET => subreg_g1:SR3.RESET
+RESET => subreg_g1:SR2.RESET
+RESET => subreg_g1:SR1.RESET
+RESET => subreg_g1:SR0.RESET
+Load => subreg_g1:SR7.Load
+Load => subreg_g1:SR6.Load
+Load => subreg_g1:SR5.Load
+Load => subreg_g1:SR4.Load
+Load => subreg_g1:SR3.Load
+Load => subreg_g1:SR2.Load
+Load => subreg_g1:SR1.Load
+Load => subreg_g1:SR0.Load
+LShift => subreg_g1:SR7.LShift
+LShift => subreg_g1:SR6.LShift
+LShift => subreg_g1:SR5.LShift
+LShift => subreg_g1:SR4.LShift
+LShift => subreg_g1:SR3.LShift
+LShift => subreg_g1:SR2.LShift
+LShift => subreg_g1:SR1.LShift
+LShift => subreg_g1:SR0.LShift
+RShift => subreg_g1:SR7.RShift
+RShift => subreg_g1:SR6.RShift
+RShift => subreg_g1:SR5.RShift
+RShift => subreg_g1:SR4.RShift
+RShift => subreg_g1:SR3.RShift
+RShift => subreg_g1:SR2.RShift
+RShift => subreg_g1:SR1.RShift
+RShift => subreg_g1:SR0.RShift
+L => subreg_g1:SR0.L
+R => subreg_g1:SR7.R
+D[0] => subreg_g1:SR0.D
+D[1] => subreg_g1:SR1.D
+D[2] => subreg_g1:SR2.D
+D[3] => subreg_g1:SR3.D
+D[4] => subreg_g1:SR4.D
+D[5] => subreg_g1:SR5.D
+D[6] => subreg_g1:SR6.D
+D[7] => subreg_g1:SR7.D
+Q[0] <= subreg_g1:SR0.Q
+Q[1] <= subreg_g1:SR1.Q
+Q[2] <= subreg_g1:SR2.Q
+Q[3] <= subreg_g1:SR3.Q
+Q[4] <= subreg_g1:SR4.Q
+Q[5] <= subreg_g1:SR5.Q
+Q[6] <= subreg_g1:SR6.Q
+Q[7] <= subreg_g1:SR7.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR7
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR7|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR6
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR6|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR5
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR5|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR4
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR4|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR3
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR3|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR2
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR2|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR1
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR1|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR0
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR0|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg2|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1
+CLK => subreg_g1:SR7.CLK
+CLK => subreg_g1:SR6.CLK
+CLK => subreg_g1:SR5.CLK
+CLK => subreg_g1:SR4.CLK
+CLK => subreg_g1:SR3.CLK
+CLK => subreg_g1:SR2.CLK
+CLK => subreg_g1:SR1.CLK
+CLK => subreg_g1:SR0.CLK
+RESET => subreg_g1:SR7.RESET
+RESET => subreg_g1:SR6.RESET
+RESET => subreg_g1:SR5.RESET
+RESET => subreg_g1:SR4.RESET
+RESET => subreg_g1:SR3.RESET
+RESET => subreg_g1:SR2.RESET
+RESET => subreg_g1:SR1.RESET
+RESET => subreg_g1:SR0.RESET
+Load => subreg_g1:SR7.Load
+Load => subreg_g1:SR6.Load
+Load => subreg_g1:SR5.Load
+Load => subreg_g1:SR4.Load
+Load => subreg_g1:SR3.Load
+Load => subreg_g1:SR2.Load
+Load => subreg_g1:SR1.Load
+Load => subreg_g1:SR0.Load
+LShift => subreg_g1:SR7.LShift
+LShift => subreg_g1:SR6.LShift
+LShift => subreg_g1:SR5.LShift
+LShift => subreg_g1:SR4.LShift
+LShift => subreg_g1:SR3.LShift
+LShift => subreg_g1:SR2.LShift
+LShift => subreg_g1:SR1.LShift
+LShift => subreg_g1:SR0.LShift
+RShift => subreg_g1:SR7.RShift
+RShift => subreg_g1:SR6.RShift
+RShift => subreg_g1:SR5.RShift
+RShift => subreg_g1:SR4.RShift
+RShift => subreg_g1:SR3.RShift
+RShift => subreg_g1:SR2.RShift
+RShift => subreg_g1:SR1.RShift
+RShift => subreg_g1:SR0.RShift
+L => subreg_g1:SR0.L
+R => subreg_g1:SR7.R
+D[0] => subreg_g1:SR0.D
+D[1] => subreg_g1:SR1.D
+D[2] => subreg_g1:SR2.D
+D[3] => subreg_g1:SR3.D
+D[4] => subreg_g1:SR4.D
+D[5] => subreg_g1:SR5.D
+D[6] => subreg_g1:SR6.D
+D[7] => subreg_g1:SR7.D
+Q[0] <= subreg_g1:SR0.Q
+Q[1] <= subreg_g1:SR1.Q
+Q[2] <= subreg_g1:SR2.Q
+Q[3] <= subreg_g1:SR3.Q
+Q[4] <= subreg_g1:SR4.Q
+Q[5] <= subreg_g1:SR5.Q
+Q[6] <= subreg_g1:SR6.Q
+Q[7] <= subreg_g1:SR7.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR7
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR7|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR6
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR6|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR5
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR5|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR4
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR4|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR3
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR3|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR2
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR2|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR1
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR1|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR0
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR0|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg1|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0
+CLK => subreg_g1:SR7.CLK
+CLK => subreg_g1:SR6.CLK
+CLK => subreg_g1:SR5.CLK
+CLK => subreg_g1:SR4.CLK
+CLK => subreg_g1:SR3.CLK
+CLK => subreg_g1:SR2.CLK
+CLK => subreg_g1:SR1.CLK
+CLK => subreg_g1:SR0.CLK
+RESET => subreg_g1:SR7.RESET
+RESET => subreg_g1:SR6.RESET
+RESET => subreg_g1:SR5.RESET
+RESET => subreg_g1:SR4.RESET
+RESET => subreg_g1:SR3.RESET
+RESET => subreg_g1:SR2.RESET
+RESET => subreg_g1:SR1.RESET
+RESET => subreg_g1:SR0.RESET
+Load => subreg_g1:SR7.Load
+Load => subreg_g1:SR6.Load
+Load => subreg_g1:SR5.Load
+Load => subreg_g1:SR4.Load
+Load => subreg_g1:SR3.Load
+Load => subreg_g1:SR2.Load
+Load => subreg_g1:SR1.Load
+Load => subreg_g1:SR0.Load
+LShift => subreg_g1:SR7.LShift
+LShift => subreg_g1:SR6.LShift
+LShift => subreg_g1:SR5.LShift
+LShift => subreg_g1:SR4.LShift
+LShift => subreg_g1:SR3.LShift
+LShift => subreg_g1:SR2.LShift
+LShift => subreg_g1:SR1.LShift
+LShift => subreg_g1:SR0.LShift
+RShift => subreg_g1:SR7.RShift
+RShift => subreg_g1:SR6.RShift
+RShift => subreg_g1:SR5.RShift
+RShift => subreg_g1:SR4.RShift
+RShift => subreg_g1:SR3.RShift
+RShift => subreg_g1:SR2.RShift
+RShift => subreg_g1:SR1.RShift
+RShift => subreg_g1:SR0.RShift
+L => subreg_g1:SR0.L
+R => subreg_g1:SR7.R
+D[0] => subreg_g1:SR0.D
+D[1] => subreg_g1:SR1.D
+D[2] => subreg_g1:SR2.D
+D[3] => subreg_g1:SR3.D
+D[4] => subreg_g1:SR4.D
+D[5] => subreg_g1:SR5.D
+D[6] => subreg_g1:SR6.D
+D[7] => subreg_g1:SR7.D
+Q[0] <= subreg_g1:SR0.Q
+Q[1] <= subreg_g1:SR1.Q
+Q[2] <= subreg_g1:SR2.Q
+Q[3] <= subreg_g1:SR3.Q
+Q[4] <= subreg_g1:SR4.Q
+Q[5] <= subreg_g1:SR5.Q
+Q[6] <= subreg_g1:SR6.Q
+Q[7] <= subreg_g1:SR7.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR7
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR7|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR7|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR6
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR6|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR6|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR5
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR5|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR5|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR4
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR4|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR4|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR3
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR3|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR3|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR2
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR2|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR2|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR1
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR1|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR1|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR0
+CLK => dff_1b_g1:DFF.CLK
+RESET => dff_1b_g1:DFF.CLR
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+Load => setBit.IN0
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+LShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+RShift => setBit.IN1
+D => setBit.IN1
+L => setBit.IN1
+R => setBit.IN1
+Q <= dff_1b_g1:DFF.Q
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR0|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REGTEST|reg48_G1:inst|reg_G1:Reg0|subreg_G1:SR0|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D.IN0
+B => D.IN1
+C => D.IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+

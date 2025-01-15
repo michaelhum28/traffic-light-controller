@@ -1,0 +1,687 @@
+|FSMTEST
+S2 <= FSM_G1:inst.OutS2
+CLK => FSM_G1:inst.CLK
+RESET => FSM_G1:inst.RESET
+SSCS => FSM_G1:inst.SSCS
+MSC[0] => FSM_G1:inst.MSC[0]
+MSC[1] => FSM_G1:inst.MSC[1]
+MSC[2] => FSM_G1:inst.MSC[2]
+MSC[3] => FSM_G1:inst.MSC[3]
+MT[0] => FSM_G1:inst.MT[0]
+MT[1] => FSM_G1:inst.MT[1]
+MT[2] => FSM_G1:inst.MT[2]
+MT[3] => FSM_G1:inst.MT[3]
+SSC[0] => FSM_G1:inst.SSC[0]
+SSC[1] => FSM_G1:inst.SSC[1]
+SSC[2] => FSM_G1:inst.SSC[2]
+SSC[3] => FSM_G1:inst.SSC[3]
+SST[0] => FSM_G1:inst.SST[0]
+SST[1] => FSM_G1:inst.SST[1]
+SST[2] => FSM_G1:inst.SST[2]
+SST[3] => FSM_G1:inst.SST[3]
+S1 <= FSM_G1:inst.OutS1
+S0 <= FSM_G1:inst.OutS0
+X <= FSM_G1:inst.OutX
+BCD1[0] <= FSM_G1:inst.BCD1[0]
+BCD1[1] <= FSM_G1:inst.BCD1[1]
+BCD1[2] <= FSM_G1:inst.BCD1[2]
+BCD1[3] <= FSM_G1:inst.BCD1[3]
+BCD2[0] <= FSM_G1:inst.BCD2[0]
+BCD2[1] <= FSM_G1:inst.BCD2[1]
+BCD2[2] <= FSM_G1:inst.BCD2[2]
+BCD2[3] <= FSM_G1:inst.BCD2[3]
+MSTL[0] <= FSM_G1:inst.MSTLO[0]
+MSTL[1] <= FSM_G1:inst.MSTLO[1]
+MSTL[2] <= FSM_G1:inst.MSTLO[2]
+SSTL[0] <= FSM_G1:inst.SSTLO[0]
+SSTL[1] <= FSM_G1:inst.SSTLO[1]
+SSTL[2] <= FSM_G1:inst.SSTLO[2]
+
+
+|FSMTEST|FSM_G1:inst
+CLK => subx_g1:SUBX.CLK
+CLK => tff_1b_g1:T2.CLK
+CLK => tff_1b_g1:T1.CLK
+CLK => tff_1b_g1:T0.CLK
+RESET => subx_g1:SUBX.RESET
+RESET => tff_1b_g1:T2.CLR
+RESET => tff_1b_g1:T1.CLR
+RESET => tff_1b_g1:T0.CLR
+SSCS => subx_g1:SUBX.SSCS
+MSC[0] => subx_g1:SUBX.MSCrv[0]
+MSC[1] => subx_g1:SUBX.MSCrv[1]
+MSC[2] => subx_g1:SUBX.MSCrv[2]
+MSC[3] => subx_g1:SUBX.MSCrv[3]
+MT[0] => subx_g1:SUBX.MTrv[0]
+MT[1] => subx_g1:SUBX.MTrv[1]
+MT[2] => subx_g1:SUBX.MTrv[2]
+MT[3] => subx_g1:SUBX.MTrv[3]
+SSC[0] => subx_g1:SUBX.SSCrv[0]
+SSC[1] => subx_g1:SUBX.SSCrv[1]
+SSC[2] => subx_g1:SUBX.SSCrv[2]
+SSC[3] => subx_g1:SUBX.SSCrv[3]
+SST[0] => subx_g1:SUBX.SSTrv[0]
+SST[1] => subx_g1:SUBX.SSTrv[1]
+SST[2] => subx_g1:SUBX.SSTrv[2]
+SST[3] => subx_g1:SUBX.SSTrv[3]
+OutS2 <= tff_1b_g1:T2.Q
+OutS1 <= tff_1b_g1:T1.Q
+OutS0 <= tff_1b_g1:T0.Q
+OutX <= subx_g1:SUBX.X
+MSTLO[0] <= muxtl_g1:MSTL.OUT0[0]
+MSTLO[1] <= muxtl_g1:MSTL.OUT0[1]
+MSTLO[2] <= muxtl_g1:MSTL.OUT0[2]
+SSTLO[0] <= muxtl_g1:SSTL.OUT0[0]
+SSTLO[1] <= muxtl_g1:SSTL.OUT0[1]
+SSTLO[2] <= muxtl_g1:SSTL.OUT0[2]
+BCD1[0] <= bcdconv_g1:BCDCONV.BCD1[0]
+BCD1[1] <= bcdconv_g1:BCDCONV.BCD1[1]
+BCD1[2] <= bcdconv_g1:BCDCONV.BCD1[2]
+BCD1[3] <= bcdconv_g1:BCDCONV.BCD1[3]
+BCD2[0] <= bcdconv_g1:BCDCONV.BCD2[0]
+BCD2[1] <= bcdconv_g1:BCDCONV.BCD2[1]
+BCD2[2] <= bcdconv_g1:BCDCONV.BCD2[2]
+BCD2[3] <= bcdconv_g1:BCDCONV.BCD2[3]
+
+
+|FSMTEST|FSM_G1:inst|SUBX_G1:SUBX
+CLK => counter_g1:MSC.clk
+CLK => counter_g1:MT.clk
+CLK => counter_g1:SSC.clk
+CLK => counter_g1:SST.clk
+RESET => comb~0.IN1
+RESET => comb~1.IN1
+RESET => comb~2.IN1
+RESET => comb~3.IN1
+SEL0 => countr_g1:DMUX.SEL0
+SEL0 => muxct_g1:MUX.SEL0
+SEL1 => countr_g1:DMUX.SEL1
+SEL1 => muxct_g1:MUX.SEL1
+SEL2 => countr_g1:DMUX.SEL2
+SEL2 => muxct_g1:MUX.SEL2
+SSCS => muxct_g1:MUX.IN1
+MSCrv[0] => counter_g1:MSC.rv[0]
+MSCrv[1] => counter_g1:MSC.rv[1]
+MSCrv[2] => counter_g1:MSC.rv[2]
+MSCrv[3] => counter_g1:MSC.rv[3]
+MTrv[0] => counter_g1:MT.rv[0]
+MTrv[1] => counter_g1:MT.rv[1]
+MTrv[2] => counter_g1:MT.rv[2]
+MTrv[3] => counter_g1:MT.rv[3]
+SSCrv[0] => counter_g1:SSC.rv[0]
+SSCrv[1] => counter_g1:SSC.rv[1]
+SSCrv[2] => counter_g1:SSC.rv[2]
+SSCrv[3] => counter_g1:SSC.rv[3]
+SSTrv[0] => counter_g1:SST.rv[0]
+SSTrv[1] => counter_g1:SST.rv[1]
+SSTrv[2] => counter_g1:SST.rv[2]
+SSTrv[3] => counter_g1:SST.rv[3]
+X <= comp_g1:COMP.X
+CountOut[0] <= muxct_g1:MUX.OUT0[0]
+CountOut[1] <= muxct_g1:MUX.OUT0[1]
+CountOut[2] <= muxct_g1:MUX.OUT0[2]
+CountOut[3] <= muxct_g1:MUX.OUT0[3]
+
+
+|FSMTEST|FSM_G1:inst|SUBX_G1:SUBX|CountR_G1:DMUX
+SEL0 => OUT0~1.IN1
+SEL0 => OUT0~3.IN1
+SEL0 => OUT0~10.IN1
+SEL0 => OUT0~13.IN1
+SEL0 => OUT0~5.IN1
+SEL0 => OUT0~8.IN1
+SEL0 => OUT0~15.IN1
+SEL0 => OUT2~0.IN1
+SEL1 => OUT0~2.IN0
+SEL1 => OUT0~7.IN0
+SEL1 => OUT0~0.IN0
+SEL1 => OUT0~12.IN0
+SEL2 => OUT0~7.IN1
+SEL2 => OUT0~12.IN1
+SEL2 => OUT0~0.IN1
+SEL2 => OUT0~2.IN1
+OUT0 <= OUT0~16.DB_MAX_OUTPUT_PORT_TYPE
+OUT2 <= OUT2~6.DB_MAX_OUTPUT_PORT_TYPE
+OUT3 <= OUT3~4.DB_MAX_OUTPUT_PORT_TYPE
+OUT4 <= OUT4~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|SUBX_G1:SUBX|counter_G1:MSC
+rst => count[0].ALOAD
+rst => count[1].ALOAD
+rst => count[2].ALOAD
+rst => count[3].ALOAD
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+up_dwn => count~0.OUTPUTSELECT
+up_dwn => count~1.OUTPUTSELECT
+up_dwn => count~2.OUTPUTSELECT
+up_dwn => count~3.OUTPUTSELECT
+rv[0] => count[0].ADATA
+rv[1] => count[1].ADATA
+rv[2] => count[2].ADATA
+rv[3] => count[3].ADATA
+o[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+o[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+o[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+o[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|SUBX_G1:SUBX|counter_G1:MT
+rst => count[0].ALOAD
+rst => count[1].ALOAD
+rst => count[2].ALOAD
+rst => count[3].ALOAD
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+up_dwn => count~0.OUTPUTSELECT
+up_dwn => count~1.OUTPUTSELECT
+up_dwn => count~2.OUTPUTSELECT
+up_dwn => count~3.OUTPUTSELECT
+rv[0] => count[0].ADATA
+rv[1] => count[1].ADATA
+rv[2] => count[2].ADATA
+rv[3] => count[3].ADATA
+o[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+o[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+o[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+o[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|SUBX_G1:SUBX|counter_G1:SSC
+rst => count[0].ALOAD
+rst => count[1].ALOAD
+rst => count[2].ALOAD
+rst => count[3].ALOAD
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+up_dwn => count~0.OUTPUTSELECT
+up_dwn => count~1.OUTPUTSELECT
+up_dwn => count~2.OUTPUTSELECT
+up_dwn => count~3.OUTPUTSELECT
+rv[0] => count[0].ADATA
+rv[1] => count[1].ADATA
+rv[2] => count[2].ADATA
+rv[3] => count[3].ADATA
+o[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+o[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+o[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+o[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|SUBX_G1:SUBX|counter_G1:SST
+rst => count[0].ALOAD
+rst => count[1].ALOAD
+rst => count[2].ALOAD
+rst => count[3].ALOAD
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+up_dwn => count~0.OUTPUTSELECT
+up_dwn => count~1.OUTPUTSELECT
+up_dwn => count~2.OUTPUTSELECT
+up_dwn => count~3.OUTPUTSELECT
+rv[0] => count[0].ADATA
+rv[1] => count[1].ADATA
+rv[2] => count[2].ADATA
+rv[3] => count[3].ADATA
+o[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+o[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+o[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+o[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|SUBX_G1:SUBX|MuxCT_G1:MUX
+SEL0 => OUT0~6.IN1
+SEL0 => OUT0~22.IN1
+SEL0 => OUT0~38.IN1
+SEL0 => OUT0~53.IN1
+SEL0 => OUT0~57.IN1
+SEL0 => OUT0~50.IN1
+SEL0 => OUT0~61.IN1
+SEL0 => OUT0~65.IN1
+SEL0 => OUT0~34.IN1
+SEL0 => OUT0~42.IN1
+SEL0 => OUT0~46.IN1
+SEL0 => OUT0~18.IN1
+SEL0 => OUT0~26.IN1
+SEL0 => OUT0~30.IN1
+SEL0 => OUT0~2.IN1
+SEL0 => OUT0~10.IN1
+SEL0 => OUT0~14.IN1
+SEL1 => OUT0~5.IN1
+SEL1 => OUT0~9.IN1
+SEL1 => OUT0~13.IN1
+SEL1 => OUT0~21.IN1
+SEL1 => OUT0~25.IN1
+SEL1 => OUT0~29.IN1
+SEL1 => OUT0~37.IN1
+SEL1 => OUT0~41.IN1
+SEL1 => OUT0~45.IN1
+SEL1 => OUT0~56.IN1
+SEL1 => OUT0~60.IN1
+SEL1 => OUT0~64.IN1
+SEL1 => OUT0~49.IN1
+SEL1 => OUT0~52.IN1
+SEL1 => OUT0~33.IN1
+SEL1 => OUT0~17.IN1
+SEL1 => OUT0~1.IN1
+SEL2 => OUT0~12.IN0
+SEL2 => OUT0~28.IN0
+SEL2 => OUT0~44.IN0
+SEL2 => OUT0~63.IN0
+SEL2 => OUT0~48.IN0
+SEL2 => OUT0~51.IN0
+SEL2 => OUT0~55.IN0
+SEL2 => OUT0~59.IN0
+SEL2 => OUT0~32.IN0
+SEL2 => OUT0~36.IN0
+SEL2 => OUT0~40.IN0
+SEL2 => OUT0~16.IN0
+SEL2 => OUT0~20.IN0
+SEL2 => OUT0~24.IN0
+SEL2 => OUT0~0.IN0
+SEL2 => OUT0~4.IN0
+SEL2 => OUT0~8.IN0
+IN1 => OUT0~51.IN1
+IN0[0] => OUT0~0.IN1
+IN0[1] => OUT0~16.IN1
+IN0[2] => OUT0~32.IN1
+IN0[3] => OUT0~48.IN1
+IN2[0] => OUT0~4.IN1
+IN2[1] => OUT0~20.IN1
+IN2[2] => OUT0~36.IN1
+IN2[3] => OUT0~55.IN1
+IN3[0] => OUT0~8.IN1
+IN3[1] => OUT0~24.IN1
+IN3[2] => OUT0~40.IN1
+IN3[3] => OUT0~59.IN1
+IN4[0] => OUT0~12.IN1
+IN4[1] => OUT0~28.IN1
+IN4[2] => OUT0~44.IN1
+IN4[3] => OUT0~63.IN1
+OUT0[0] <= OUT0~15.DB_MAX_OUTPUT_PORT_TYPE
+OUT0[1] <= OUT0~31.DB_MAX_OUTPUT_PORT_TYPE
+OUT0[2] <= OUT0~47.DB_MAX_OUTPUT_PORT_TYPE
+OUT0[3] <= OUT0~66.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|SUBX_G1:SUBX|comp_G1:COMP
+IN0[0] => X~0.IN0
+IN0[1] => X~0.IN1
+IN0[2] => X~1.IN1
+IN0[3] => X~2.IN1
+X <= X~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T2
+CLK => dff_1b_g1:DFF.CLK
+T => din~1.IN1
+T => din~0.IN1
+SET => dff_1b_g1:DFF.SET
+CLR => dff_1b_g1:DFF.CLR
+Q <= dff_1b_g1:DFF.Q
+QN <= dff_1b_g1:DFF.QN
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T2|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T2|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T2|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T2|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T2|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T2|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T2|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T1
+CLK => dff_1b_g1:DFF.CLK
+T => din~1.IN1
+T => din~0.IN1
+SET => dff_1b_g1:DFF.SET
+CLR => dff_1b_g1:DFF.CLR
+Q <= dff_1b_g1:DFF.Q
+QN <= dff_1b_g1:DFF.QN
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T1|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T1|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T1|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T1|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T1|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T1|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T1|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T0
+CLK => dff_1b_g1:DFF.CLK
+T => din~1.IN1
+T => din~0.IN1
+SET => dff_1b_g1:DFF.SET
+CLR => dff_1b_g1:DFF.CLR
+Q <= dff_1b_g1:DFF.Q
+QN <= dff_1b_g1:DFF.QN
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T0|dff_1b_G1:DFF
+CLK => nand3_g1:NAND2.B
+CLK => nand3_g1:NAND3.B
+D => nand3_g1:NAND4.B
+SET => nand3_g1:NAND1.A
+SET => nand3_g1:NAND5.A
+CLR => nand3_g1:NAND2.C
+CLR => nand3_g1:NAND4.C
+CLR => nand3_g1:NAND6.C
+Q <= nand3_g1:NAND5.D
+QN <= nand3_g1:NAND6.D
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T0|dff_1b_G1:DFF|nand3_G1:NAND1
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T0|dff_1b_G1:DFF|nand3_G1:NAND2
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T0|dff_1b_G1:DFF|nand3_G1:NAND3
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T0|dff_1b_G1:DFF|nand3_G1:NAND4
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T0|dff_1b_G1:DFF|nand3_G1:NAND5
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|tff_1b_G1:T0|dff_1b_G1:DFF|nand3_G1:NAND6
+A => D~0.IN0
+B => D~0.IN1
+C => D~1.IN1
+D <= D~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|MuxTL_G1:MSTL
+SEL0 => OUT0~5.IN1
+SEL0 => OUT0~9.IN1
+SEL0 => OUT0~24.IN1
+SEL0 => OUT0~28.IN1
+SEL0 => OUT0~43.IN1
+SEL0 => OUT0~47.IN1
+SEL0 => OUT0~40.IN1
+SEL0 => OUT0~51.IN1
+SEL0 => OUT0~55.IN1
+SEL0 => OUT0~21.IN1
+SEL0 => OUT0~32.IN1
+SEL0 => OUT0~36.IN1
+SEL0 => OUT0~2.IN1
+SEL0 => OUT0~13.IN1
+SEL0 => OUT0~17.IN1
+SEL1 => OUT0~8.IN1
+SEL1 => OUT0~12.IN1
+SEL1 => OUT0~16.IN1
+SEL1 => OUT0~27.IN1
+SEL1 => OUT0~31.IN1
+SEL1 => OUT0~35.IN1
+SEL1 => OUT0~46.IN1
+SEL1 => OUT0~50.IN1
+SEL1 => OUT0~54.IN1
+SEL1 => OUT0~39.IN1
+SEL1 => OUT0~42.IN1
+SEL1 => OUT0~20.IN1
+SEL1 => OUT0~23.IN1
+SEL1 => OUT0~1.IN1
+SEL1 => OUT0~4.IN1
+SEL2 => OUT0~15.IN0
+SEL2 => OUT0~34.IN0
+SEL2 => OUT0~53.IN0
+SEL2 => OUT0~38.IN0
+SEL2 => OUT0~41.IN0
+SEL2 => OUT0~45.IN0
+SEL2 => OUT0~49.IN0
+SEL2 => OUT0~19.IN0
+SEL2 => OUT0~22.IN0
+SEL2 => OUT0~26.IN0
+SEL2 => OUT0~30.IN0
+SEL2 => OUT0~0.IN0
+SEL2 => OUT0~3.IN0
+SEL2 => OUT0~7.IN0
+SEL2 => OUT0~11.IN0
+IN0[0] => OUT0~0.IN1
+IN0[1] => OUT0~19.IN1
+IN0[2] => OUT0~38.IN1
+IN1[0] => OUT0~3.IN1
+IN1[1] => OUT0~22.IN1
+IN1[2] => OUT0~41.IN1
+IN2[0] => OUT0~7.IN1
+IN2[1] => OUT0~26.IN1
+IN2[2] => OUT0~45.IN1
+IN3[0] => OUT0~11.IN1
+IN3[1] => OUT0~30.IN1
+IN3[2] => OUT0~49.IN1
+IN4[0] => OUT0~15.IN1
+IN4[1] => OUT0~34.IN1
+IN4[2] => OUT0~53.IN1
+OUT0[0] <= OUT0~18.DB_MAX_OUTPUT_PORT_TYPE
+OUT0[1] <= OUT0~37.DB_MAX_OUTPUT_PORT_TYPE
+OUT0[2] <= OUT0~56.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|MuxTL_G1:SSTL
+SEL0 => OUT0~5.IN1
+SEL0 => OUT0~9.IN1
+SEL0 => OUT0~24.IN1
+SEL0 => OUT0~28.IN1
+SEL0 => OUT0~43.IN1
+SEL0 => OUT0~47.IN1
+SEL0 => OUT0~40.IN1
+SEL0 => OUT0~51.IN1
+SEL0 => OUT0~55.IN1
+SEL0 => OUT0~21.IN1
+SEL0 => OUT0~32.IN1
+SEL0 => OUT0~36.IN1
+SEL0 => OUT0~2.IN1
+SEL0 => OUT0~13.IN1
+SEL0 => OUT0~17.IN1
+SEL1 => OUT0~8.IN1
+SEL1 => OUT0~12.IN1
+SEL1 => OUT0~16.IN1
+SEL1 => OUT0~27.IN1
+SEL1 => OUT0~31.IN1
+SEL1 => OUT0~35.IN1
+SEL1 => OUT0~46.IN1
+SEL1 => OUT0~50.IN1
+SEL1 => OUT0~54.IN1
+SEL1 => OUT0~39.IN1
+SEL1 => OUT0~42.IN1
+SEL1 => OUT0~20.IN1
+SEL1 => OUT0~23.IN1
+SEL1 => OUT0~1.IN1
+SEL1 => OUT0~4.IN1
+SEL2 => OUT0~15.IN0
+SEL2 => OUT0~34.IN0
+SEL2 => OUT0~53.IN0
+SEL2 => OUT0~38.IN0
+SEL2 => OUT0~41.IN0
+SEL2 => OUT0~45.IN0
+SEL2 => OUT0~49.IN0
+SEL2 => OUT0~19.IN0
+SEL2 => OUT0~22.IN0
+SEL2 => OUT0~26.IN0
+SEL2 => OUT0~30.IN0
+SEL2 => OUT0~0.IN0
+SEL2 => OUT0~3.IN0
+SEL2 => OUT0~7.IN0
+SEL2 => OUT0~11.IN0
+IN0[0] => OUT0~0.IN1
+IN0[1] => OUT0~19.IN1
+IN0[2] => OUT0~38.IN1
+IN1[0] => OUT0~3.IN1
+IN1[1] => OUT0~22.IN1
+IN1[2] => OUT0~41.IN1
+IN2[0] => OUT0~7.IN1
+IN2[1] => OUT0~26.IN1
+IN2[2] => OUT0~45.IN1
+IN3[0] => OUT0~11.IN1
+IN3[1] => OUT0~30.IN1
+IN3[2] => OUT0~49.IN1
+IN4[0] => OUT0~15.IN1
+IN4[1] => OUT0~34.IN1
+IN4[2] => OUT0~53.IN1
+OUT0[0] <= OUT0~18.DB_MAX_OUTPUT_PORT_TYPE
+OUT0[1] <= OUT0~37.DB_MAX_OUTPUT_PORT_TYPE
+OUT0[2] <= OUT0~56.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSMTEST|FSM_G1:inst|bcdConv_G1:BCDCONV
+Bin[0] => Mux0.IN19
+Bin[0] => Mux1.IN19
+Bin[0] => Mux2.IN19
+Bin[0] => Mux3.IN19
+Bin[0] => Mux6.IN19
+Bin[1] => Mux0.IN18
+Bin[1] => Mux1.IN18
+Bin[1] => Mux2.IN18
+Bin[1] => Mux3.IN18
+Bin[1] => Mux4.IN10
+Bin[1] => Mux5.IN10
+Bin[1] => Mux6.IN18
+Bin[2] => Mux0.IN17
+Bin[2] => Mux1.IN17
+Bin[2] => Mux2.IN17
+Bin[2] => Mux3.IN17
+Bin[2] => Mux4.IN9
+Bin[2] => Mux5.IN9
+Bin[2] => Mux6.IN17
+Bin[3] => Mux0.IN16
+Bin[3] => Mux1.IN16
+Bin[3] => Mux2.IN16
+Bin[3] => Mux3.IN16
+Bin[3] => Mux4.IN8
+Bin[3] => Mux5.IN8
+Bin[3] => Mux6.IN16
+BCD1[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+BCD1[1] <= <GND>
+BCD1[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+BCD1[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+
+
